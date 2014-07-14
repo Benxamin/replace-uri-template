@@ -1,0 +1,10 @@
+{
+  "name": "replaceFirstUriTemplate",
+  "description": "Replace the first occurance of a URI template with given value",
+  "version": "0.0.1",
+  "keywords": ["uri template", "hyper+json"],
+  "dependencies": {},
+  "scripts": [
+    "index.js"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "replace-uri-template",
+  "version": "0.0.1",
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "component": {
+    "scripts": {
+      "replace-uri-template/index.js": "index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Benxamin/replace-uri-template.git"
+  }
+}
