@@ -1,6 +1,6 @@
 {
-  "name": "replaceFirstUriTemplate",
-  "description": "Replace the first occurance of a URI template with given value",
+  "name": "replace-uri-template",
+  "description": "Replace the occurances of a URI template with the given value",
   "version": "0.0.1",
   "keywords": ["uri template", "hyper+json"],
   "dependencies": {},
