@@ -5,7 +5,7 @@ Replaces a URI template with the given value, per the [hyper+json spec, validati
 
 ## Example
 ```js
-var replaceToken = reequire('replace-uri-template');
+var replaceToken = require('replace-uri-template');
 var newUrl = replacetoken('http://example.com/{?param}&key=123', 'newValue')
 // newURl => "http://example.com/newValue&key=123"
 ```
