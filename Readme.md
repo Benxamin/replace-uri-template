@@ -1,6 +1,6 @@
 # replaceUriTemplate
 
-Replaces a URI template with the given value, per the [hyper+json spec, validation extension](https://github.com/hypergroup/hyper-json/blob/master/extensions/validate-link.md).
+Replaces a [URI template](http://tools.ietf.org/html/rfc6570) with the given value, per the [hyper+json spec, validation extension](https://github.com/hypergroup/hyper-json/blob/master/extensions/validate-link.md).
 
 
 ## Example
