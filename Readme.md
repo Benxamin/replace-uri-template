@@ -10,6 +10,18 @@ var newUrl = replaceToken('http://example.com/{?param}&key=123', 'newValue')
 // newURl => "http://example.com/?param=newValue&key=123"
 ```
 
+
+## Test
+
+To run tests locally, install the Node dependencies and run `make test`.
+
+```sh
+$ npm install
+```
+```sh
+$ make test
+```
+
 ## License
 
 MIT
