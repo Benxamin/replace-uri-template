@@ -16,7 +16,7 @@ module.exports = replaceUriTemplate;
  */
 
 function replaceUriTemplate(uri, value) {
-  if (!uri || !value) throw TypeError("replaceUriTemplate() requires two string parameters: URI Template and Value");
+  if (2 != arguments.length) throw TypeError("replaceUriTemplate() requires two string parameters: URI Template and Value");
   return uri.replace(/\{(\+|#|\.|\/|;|\?|&)?(\w+)\}/, function(match, op, key) {
     if (~QUERY_PARAM.indexOf(op)) return op + key + '=' + encodeURIComponent(value);
     return op ? op + value : value;

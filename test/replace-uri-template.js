@@ -11,6 +11,7 @@ var replace = require('..'),
 var val = 'test123';
 
 describe('replace', function() {
+
   describe('token missing parameter', function() {
     it('should throw new TypeError', function() {
       (function() {
@@ -23,6 +24,19 @@ describe('replace', function() {
       }).should.throw();
     });
   });
+
+  describe('Replacement value is zero (O)', function() {
+    it('should return a normalized URL with the zero substituted', function() {
+      var val = 0;
+      replace('http://example.com{?param}', val).should.equal('http://example.com?param='+val);
+      replace('http://example.com{&param}', val).should.equal('http://example.com&param='+val);
+      replace('http://example.com?{+param}', val).should.equal('http://example.com?+'+val);
+      replace('http://example.com?{#param}', val).should.equal('http://example.com?#'+val);
+      replace('http://example.com?{.param}', val).should.equal('http://example.com?.'+val);
+      replace('http://example.com?{;param}', val).should.equal('http://example.com?;'+val);
+    });
+  });
+
   describe('token adjacent to domain name', function() {
     it('should return normalized URL', function() {
       replace('http://example.com{/param}/path/?foo=bar', val).should.equal('http://example.com/'+val+'/path/?foo=bar');
